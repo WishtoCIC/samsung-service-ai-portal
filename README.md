@@ -1,5 +1,7 @@
 # Samsung Service AI Portal
 
+[![GitHub](https://img.shields.io/badge/GitHub-samsung--service--ai--portal-blue?logo=github)](https://github.com/WishtoCIC/samsung-service-ai-portal)
+
 삼성전자서비스 AI TF 사내공모 지원을 위해 개발한 프로토타입 2종입니다.
 
 ## 프로토타입 구성
