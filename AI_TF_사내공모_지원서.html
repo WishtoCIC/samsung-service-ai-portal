@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사내공모 지원서</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+      font-size: 11pt;
+      background: #f0f2f5;
+      color: #1a1a1a;
+      padding: 40px 20px;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 50px 55px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+      border-radius: 4px;
+    }
+
+    /* 제목 */
+    h1 {
+      text-align: center;
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: 6px;
+      margin-bottom: 36px;
+      color: #0a0a0a;
+      border-bottom: 2.5px solid #00449e;
+      padding-bottom: 14px;
+    }
+
+    /* 섹션 제목 */
+    .section-title {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #00449e;
+      margin: 24px 0 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 16px;
+      background: #00449e;
+      border-radius: 2px;
+    }
+
+    /* 공통 테이블 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 4px;
+      font-size: 10.5pt;
+    }
+
+    th,
+    td {
+      border: 1px solid #b0b8c1;
+      padding: 9px 12px;
+      vertical-align: middle;
+    }
+
+    th {
+      background: #d6e4f0;
+      font-weight: 700;
+      text-align: center;
+      white-space: nowrap;
+      color: #003366;
+    }
+
+    /* 1. 인적사항 */
+    .info-table td {
+      text-align: center;
+    }
+
+    .info-table .fill {
+      color: #888;
+      font-style: italic;
+    }
+
+    /* 2. 지원분야 */
+    .field-table .hint {
+      font-size: 9pt;
+      color: #888;
+    }
+
+    .field-table .selected {
+      font-weight: 700;
+      color: #00449e;
+    }
+
+    /* 3. 지원 내용 */
+    .content-table th {
+      width: 100px;
+      vertical-align: middle;
+      line-height: 1.6;
+    }
+
+    .content-table td {
+      vertical-align: top;
+      padding: 14px 16px;
+      line-height: 1.75;
+    }
+
+    /* 지원동기 단락 */
+    .motivation p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .motivation p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 직무경험 */
+    .exp-section-title {
+      font-weight: 700;
+      color: #003366;
+      margin: 6px 0 6px 0;
+      font-size: 10.5pt;
+    }
+
+    .exp-section-title:first-child {
+      margin-top: 0;
+    }
+
+    .exp-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 0;
+    }
+
+    .exp-list li {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 5px;
+      align-items: flex-start;
+    }
+
+    .exp-list li::before {
+      content: '•';
+      color: #00449e;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .exp-list li .org {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .exp-list li .divider {
+      color: #aaa;
+      margin: 0 4px;
+    }
+
+    .exp-list li .desc {
+      color: #333;
+    }
+
+    /* 기타 */
+    .etc-text {
+      line-height: 1.75;
+      text-align: justify;
+    }
+
+    /* 안내 문구 */
+    .footnote {
+      font-size: 9pt;
+      color: #999;
+      margin-top: 10px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .page {
+        box-shadow: none;
+        padding: 30px 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <h1>사내공모 지원서</h1>
+
+    <!-- 1. 지원자 인적사항 -->
+    <div class="section-title">1. 지원자 인적사항</div>
+    <table class="info-table">
+      <thead>
+        <tr>
+          <th>소속</th>
+          <th>사번</th>
+          <th>이름</th>
+          <th>현 직무</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>운영혁신팀 구독혁신그룹</td>
+          <td class="fill">(기재)</td>
+          <td class="fill">(기재)</td>
+          <td>구독 상품화 담당 및<br>판매연계 활성화 업무지원</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 2. 지원분야 -->
+    <div class="section-title">2. 지원분야</div>
+    <table class="field-table">
+      <tbody>
+        <tr>
+          <th>지원분야</th>
+          <td class="hint">프로세스 혁신(모바일/디지털) / 시스템 / 교육·문화 / AI Crew 운영 중 택일</td>
+        </tr>
+        <tr>
+          <th>선택</th>
+          <td class="selected">프로세스 혁신 (디지털)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 3. 지원 내용 -->
+    <div class="section-title">3. 지원 내용</div>
+    <table class="content-table">
+      <tbody>
+
+        <!-- 지원동기 -->
+        <tr>
+          <th>지원동기<br><span style="font-weight:400;font-size:9pt;">(상세히 작성)</span></th>
+          <td>
+            <div class="motivation">
+              <p>현장 엔지니어로 고객을 직접 만나던 시절부터 현재 구독 업무에 이르기까지, 직무는 달라졌지만 반복적으로 마주친 문제가 있었습니다. 기술 가이드, 수리 매뉴얼, 사양 변경 이력 등 방대한
+                자료가 존재함에도 여러 곳에 분산되어 있어 필요한 순간에 신속하게 찾기 어려웠고, 이로 인해 현장 대응이 지연되거나 업무 흐름이 끊기는 상황이 반복되었습니다. 정보의 부재가 아니라
+                프로세스의 문제였습니다.</p>
+              <p>이를 해결할 수 있다는 가능성을 육아휴직 기간 동안 직접 확인했습니다. Claude·ChatGPT를 활용한 바이브 코딩을 시작으로, LangChain·LangGraph 기반의
+                RAG(검색 증강 생성) 시스템을 설계·구축하며 분산된 정보를 AI가 즉시 찾아주는 구조를 실습으로 검증했습니다. 아울러 사내 보안 환경을 고려하여 외부 LLM 의존도를 낮춘 로컬
+                LLM(Gemma4) 온프레미스 환경도 직접 테스트하며 현실적인 사내 적용 방안을 검토했습니다.</p>
+              <p>지원 과정에서도 이 역량을 직접 시연해 보았습니다. 기상청 공공데이터(기온·폭염일수)와 에어컨 서비스 물량 이력을 연계한 수요예측 대시보드를 Python·Streamlit으로 직접
+                구현하였습니다. 분석 결과 7~8월 폭염일수와 서비스 접수량 간 상관계수 r=0.66이 확인되었고, 제품코드(HAC/SRA/CAC)별 월별 트렌드·지역 GPS 분포·처리시간 분석까지
+                실제로 작동하는 프로토타입을 완성하였습니다. <strong>말로만 하는 혁신이 아니라, 이미 만들어봤습니다.</strong></p>
+              <p>현장·교육·기술·운영을 순서대로 경험하며 쌓아온 현업 시각과, 스스로 준비한 AI 역량을 결합하여 실제로 작동하는 프로세스 혁신에 기여하고 싶어 지원합니다.</p>
+            </div>
+          </td>
+        </tr>
+
+        <!-- 직무경험 -->
+        <tr>
+          <th>직무경험 /<br>자격 /<br>수상사항</th>
+          <td>
+            <div class="exp-section-title">[ 직무 경험 ]</div>
+            <ul class="exp-list">
+              <li>
+                <span class="org">운영혁신팀 구독혁신그룹 (현재)</span>
+                <span class="divider">|</span>
+                <span class="desc">구독 상품화 및 판매연계 활성화 업무지원</span>
+              </li>
+              <li>
+                <span class="org">기술팀 디지털기술그룹</span>
+                <span class="divider">|</span>
+                <span class="desc">세탁기 제품 담당, 기술 자료 관리 및 제품 지원</span>
+              </li>
+              <li>
+                <span class="org">기술팀 기술교육그룹</span>
+                <span class="divider">|</span>
+                <span class="desc">HA 제품군 기술강사, 교육 콘텐츠 제작·기술교육 운영</span>
+              </li>
+              <li>
+                <span class="org">현장 엔지니어</span>
+                <span class="divider">|</span>
+                <span class="desc">고객 방문 제품 수리, 현장 프로세스 직접 경험</span>
+              </li>
+            </ul>
+
+            <div class="exp-section-title">[ AI 자기개발 — 육아휴직 중 ]</div>
+            <ul class="exp-list">
+              <li><span class="desc">LangChain·LangGraph 기반 RAG 시스템 설계·구축 실습</span></li>
+              <li><span class="desc">로컬 LLM(Gemma4) 온프레미스 환경 테스트 — 사내 보안 제약 대응 방안 자체 검토</span></li>
+              <li><span class="desc">Claude·ChatGPT 활용 바이브 코딩 학습</span></li>
+            </ul>
+          </td>
+        </tr>
+
+        <!-- 기타 -->
+        <tr>
+          <th>기타</th>
+          <td>
+            <div class="etc-text">
+              <div class="exp-section-title">[ 프로토타입 ① — 서비스 수요예측 대시보드 ]</div>
+              <p style="margin-bottom:12px;">기상청 공공 API(기온·폭염일수) × 에어컨 서비스 이력 데이터를 연계하여 월별 수요를 예측하는 대시보드를
+                Python·Streamlit으로 직접 구현하였습니다. 제품코드별(HAC·SRA·CAC) 월별 트렌드, 지역 GPS 분포 지도, 날씨 상관관계(r=0.66), 처리시간 분포 등 5개 탭을
+                실제로 작동하는 형태로 완성하였으며, 현장에서 실 데이터를 CSV/XLSX로 업로드하면 즉시 분석 결과로 전환되는 구조로 설계하였습니다.</p>
+              <div class="exp-section-title">[ 프로토타입 ② — 기술정보 통합 검색 웹 앱 (구상·구현 중) ]</div>
+              <p style="margin-bottom:12px;">수리 매뉴얼·제품 사양·사양 변경 이력 등 흩어진 기술 자료를 RAG(검색 증강 생성) 방식으로 통합 검색하고, 현장 엔지니어가
+                담당자에게 직접 요청을 접수할 수 있는 웹 기반 앱을 LangChain·Streamlit으로 설계하고 있습니다. 사내 보안 제약을 고려하여 로컬 LLM(Gemma4) 기반 온프레미스
+                구성을 우선 검토 중이며, TF 합류 시 즉시 사내 환경에 적용 가능한 형태로 발전시킬 계획입니다.</p>
+              <p>현장·교육·기술·운영 전 단계를 직접 경험한 시각으로, 실제로 작동하는 AI 기반 프로세스 혁신 과제 발굴과 구현에 즉시 기여하겠습니다.</p>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p class="footnote">※ 내용이 많을 경우 페이지를 추가하여 작성 가능합니다.</p>
+
+  </div>
+</body>
+
+</html>

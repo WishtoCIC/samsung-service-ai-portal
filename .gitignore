@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# 업로드·데이터 (개인정보 보호)
+tech_search/uploads/
+tech_search/data/
+service_forecast/data/
+
+# 카카오톡 사진
+*.jpeg
+*.jpg
+*.png
+
+# 오피스 파일
+*.docx
+*.xlsx
+
+# 대용량 첨부 HTML (base64 임베드)
+AI_TF_사내공모_지원서_첨부.html
+AI_TF_사내공모_지원서_통합.html
+
+# macOS
+.DS_Store
